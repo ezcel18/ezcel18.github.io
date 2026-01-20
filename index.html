@@ -4,7 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alcel Montecino | Full-Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem;
+      background: linear-gradient(135deg, #1e293b, #020617);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: #94a3b8;
+      margin-bottom: 1rem;
+    }
+    .links a {
+      color: #38bdf8;
+      font-weight: 500;
+      margin: 0 0.5rem;
+    }
+    h2 {
+      border-bottom: 2px solid #1e293b;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .skills .badge {
+      background: #1e293b;
+      margin: 0.25rem;
+      font-size: 0.9rem;
+    }
+    .project {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .project a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .tech {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,62 +74,70 @@
   </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a Full-Stack Developer with experience building scalable web applications
-    using PHP, Symfony, JavaScript, and MySQL. I work as a freelancer and
-    collaborate with teams and agencies on contract-based projects.
-  </p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>PHP</span>
-    <span>Symfony</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>MySQL</span>
-    <span>Docker</span>
-    <span>Git</span>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Client Management System</h3>
+<main class="container my-5">
+  <!-- About Me -->
+  <section>
+    <h2>About Me</h2>
     <p>
-      A web application for managing clients, notes, attachments, and user roles.
+      I am a Full-Stack Developer with experience building scalable web applications
+      using PHP, Symfony, JavaScript, and MySQL. I work as a freelancer and
+      collaborate with teams and agencies on contract-based projects.
     </p>
-    <p class="tech">Tech: Symfony 6.4, PHP 8.2, MySQL, Docker</p>
-    <a href="#" target="_blank">GitHub Repo</a>
-  </div>
+  </section>
 
-  <div class="project">
-    <h3>Notes & Attachments Module</h3>
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="badge rounded-pill">PHP</span>
+      <span class="badge rounded-pill">Symfony</span>
+      <span class="badge rounded-pill">JavaScript</span>
+      <span class="badge rounded-pill">HTML</span>
+      <span class="badge rounded-pill">CSS</span>
+      <span class="badge rounded-pill">MySQL</span>
+      <span class="badge rounded-pill">Docker</span>
+      <span class="badge rounded-pill">Git</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Client Management System</h3>
+      <p>
+        A web application for managing clients, notes, attachments, and user roles.
+      </p>
+      <p class="tech">Tech: Symfony 6.4, PHP 8.2, MySQL, Docker</p>
+      <a href="#" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Notes & Attachments Module</h3>
+      <p>
+        CRUD-based module with file uploads, permissions, and soft deletes.
+      </p>
+      <p class="tech">Tech: PHP, Symfony, Twig</p>
+      <a href="#" target="_blank">GitHub Repo</a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
     <p>
-      CRUD-based module with file uploads, permissions, and soft deletes.
+      <strong>Freelance Full-Stack Developer</strong><br/>
+      Affiliated with agencies and direct clients for contract-based development.
     </p>
-    <p class="tech">Tech: PHP, Symfony, Twig</p>
-    <a href="#" target="_blank">GitHub Repo</a>
-  </div>
-</section>
-
-<section>
-  <h2>Experience</h2>
-  <p>
-    <strong>Freelance Full-Stack Developer</strong><br/>
-    Affiliated with agencies and direct clients for contract-based development.
-  </p>
-</section>
+  </section>
+</main>
 
 <footer>
   © 2026 Alcel Montecino
 </footer>
 
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
