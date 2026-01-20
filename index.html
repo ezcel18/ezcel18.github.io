@@ -12,10 +12,15 @@
       color: #e5e7eb;
       font-family: system-ui, -apple-system, BlinkMacSystemFont;
     }
+
+    /* Hero Section */
     .hero {
       text-align: center;
       padding: 6rem 1rem;
       background: linear-gradient(135deg, #1e293b, #020617);
+    }
+    .hero img {
+      border: 4px solid #38bdf8;
     }
     .hero h1 {
       font-size: 3rem;
@@ -30,6 +35,8 @@
       font-weight: 500;
       margin: 0 0.5rem;
     }
+
+    /* Sections */
     h2 {
       border-bottom: 2px solid #1e293b;
       padding-bottom: 0.5rem;
@@ -40,20 +47,27 @@
       margin: 0.25rem;
       font-size: 0.9rem;
     }
-    .project {
+
+    /* Projects Cards */
+    .card {
       background: #020617;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      margin-bottom: 1.5rem;
+      color: #e5e7eb;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    .project a {
-      color: #38bdf8;
-      text-decoration: none;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .card-footer {
+      background: transparent;
+      border-top: none;
     }
     .tech {
       color: #94a3b8;
       font-size: 0.9rem;
     }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -64,7 +78,8 @@
 </head>
 <body>
 
-<header class="hero text-center">
+<!-- Hero Section -->
+<header class="hero">
   <img src="avatar.jpg" alt="Alcel Montecino" class="rounded-circle mb-3" width="120" height="120">
   <h1>Alcel Montecino</h1>
   <p>Full-Stack Developer • Freelancer</p>
@@ -75,8 +90,8 @@
   </div>
 </header>
 
-
 <main class="container my-5">
+
   <!-- About Me -->
   <section>
     <h2>About Me</h2>
@@ -104,43 +119,43 @@
 
   <!-- Projects -->
   <section>
-  <h2>Projects</h2>
-
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <!-- Project 1 -->
-    <div class="col">
-      <div class="card bg-dark text-light h-100 border-0 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Client Management System</h5>
-          <p class="card-text">
-            A web application for managing clients, notes, attachments, and user roles.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          <small class="text-muted">Tech: Symfony 6.4, PHP 8.2, MySQL, Docker</small><br/>
-          <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-2">GitHub Repo</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="col">
-      <div class="card bg-dark text-light h-100 border-0 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Notes & Attachments Module</h5>
-          <p class="card-text">
-            CRUD-based module with file uploads, permissions, and soft deletes.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          <small class="text-muted">Tech: PHP, Symfony, Twig</small><br/>
-          <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-2">GitHub Repo</a>
+    <h2>Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      
+      <!-- Project 1 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Client Management System</h5>
+            <p class="card-text">
+              A web application for managing clients, notes, attachments, and user roles.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="tech">Tech: Symfony 6.4, PHP 8.2, MySQL, Docker</small><br/>
+            <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-2">GitHub Repo</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
+      <!-- Project 2 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Notes & Attachments Module</h5>
+            <p class="card-text">
+              CRUD-based module with file uploads, permissions, and soft deletes.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="tech">Tech: PHP, Symfony, Twig</small><br/>
+            <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-2">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Experience -->
   <section>
@@ -150,8 +165,10 @@
       Affiliated with agencies and direct clients for contract-based development.
     </p>
   </section>
+
 </main>
 
+<!-- Footer -->
 <footer>
   © 2026 Alcel Montecino
 </footer>
