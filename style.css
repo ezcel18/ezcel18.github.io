@@ -1,15 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  section {
-    margin-top: 40px;
-  }
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e293b, #020617);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.project {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.tech {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
