@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alcel Montecino | Full-Stack Developer</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       background: #0f172a;
@@ -13,7 +15,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       text-align: center;
       padding: 6rem 1rem;
@@ -34,6 +36,7 @@
       color: #38bdf8;
       font-weight: 500;
       margin: 0 0.5rem;
+      text-decoration: none;
     }
 
     /* Sections */
@@ -42,13 +45,14 @@
       padding-bottom: 0.5rem;
       margin-bottom: 1.5rem;
     }
-    .skills .badge {
+
+    .badge {
       background: #1e293b;
       margin: 0.25rem;
       font-size: 0.9rem;
     }
 
-    /* Projects Cards */
+    /* Cards */
     .card {
       background: #020617;
       color: #e5e7eb;
@@ -58,46 +62,43 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     }
-    .card-footer {
-      background: transparent;
-      border-top: none;
-    }
     .tech {
       color: #94a3b8;
       font-size: 0.9rem;
     }
 
-    /* Experience & Skills Lists */
+    /* Experience */
     .experience-item {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .experience-item h5 {
-      margin-bottom: 0.5rem;
       color: #38bdf8;
-    }
-    .experience-item ul {
-      padding-left: 1.25rem;
-    }
-    .skills-list li {
-      margin-bottom: 0.25rem;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       color: #64748b;
       font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <header class="hero">
-  <img src="avatar.jpg" alt="Alcel Montecino" class="rounded-circle mb-3" width="200" height="200">
+  <img src="avatar.jpg"
+       alt="Alcel Montecino"
+       class="rounded-circle mb-3"
+       width="180"
+       height="180"
+       onerror="this.src='https://via.placeholder.com/180'">
+
   <h1>Alcel Montecino</h1>
-  <p>Full-Stack Developer • Freelancer</p>
+  <p>Senior Full-Stack Developer • PHP / Symfony / .NET</p>
+
   <div class="links">
     <a href="https://github.com/ezcel18" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/alcel-montecino-012206352" target="_blank">LinkedIn</a>
@@ -107,83 +108,96 @@
 
 <main class="container my-5">
 
-  <!-- About Me -->
-  <section>
+  <!-- ABOUT -->
+  <section class="mb-5">
     <h2>About Me</h2>
     <p>
-      I am a Full-Stack Developer (8+ years) and .NET C# Developer (5 years)
-      with proven expertise in designing, developing, and maintaining secure,
-      scalable, and high-performing applications. Skilled in building new
-      features, optimizing performance, fixing bugs, and integrating third-party
-      APIs. Strong background in database management, Agile
-      methodologies, and cross-functional collaboration to deliver impactful
-      business solutions.
+      Senior Full-Stack Developer with 8+ years of experience in PHP
+      and 5+ years in .NET/C#. I specialize in building scalable,
+      secure, and high-performance enterprise applications.
+      Experienced in system optimization, API integrations,
+      and long-term platform maintenance in Agile environments.
     </p>
   </section>
 
-  <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span class="badge rounded-pill">PHP</span>
-      <span class="badge rounded-pill">Symfony</span>
-      <span class="badge rounded-pill">JavaScript</span>
-      <span class="badge rounded-pill">HTML</span>
-      <span class="badge rounded-pill">CSS</span>
-      <span class="badge rounded-pill">MySQL</span>
-      <span class="badge rounded-pill">Docker</span>
-      <span class="badge rounded-pill">.NET</span>
-      <span class="badge rounded-pill">SQL Server</span>
-      <span class="badge rounded-pill">Git</span>
-    </div>
+  <!-- SKILLS -->
+  <section class="mb-5">
+    <h2>Core Skills</h2>
+    <span class="badge rounded-pill">PHP</span>
+    <span class="badge rounded-pill">Symfony</span>
+    <span class="badge rounded-pill">Laravel</span>
+    <span class="badge rounded-pill">.NET / C#</span>
+    <span class="badge rounded-pill">JavaScript</span>
+    <span class="badge rounded-pill">MySQL</span>
+    <span class="badge rounded-pill">SQL Server</span>
+    <span class="badge rounded-pill">Docker</span>
+    <span class="badge rounded-pill">Git</span>
+    <span class="badge rounded-pill">Azure</span>
+    <span class="badge rounded-pill">AWS</span>
   </section>
 
-  <!-- Projects -->
-  <section>
+  <!-- PROJECTS -->
+  <section class="mb-5">
     <h2>Projects</h2>
+
     <div class="row row-cols-1 row-cols-md-2 g-4">
-      
-      <!-- Project 1: Facilities Scheduler -->
+
+      <!-- Facilities Scheduler -->
       <div class="col">
-        <div class="card h-100 border-0 shadow-sm">
+        <div class="card h-100 border-0">
           <div class="card-body">
             <h5 class="card-title">Facilities Scheduler</h5>
-            <p class="card-text">
-              A comprehensive scheduling system for schools and districts, providing real-time views of all activities across buildings and locations.
+            <p>
+              Enterprise scheduling system for schools and districts,
+              providing real-time visibility of facilities, events,
+              and resources across multiple locations.
             </p>
-            <ul class="mb-2">
-              <li>Real-time updates for all facilities and locations</li>
-              <li>Automated conflict-checking with athletic schedules and maintenance requests</li>
-              <li>Integration with school web calendars for visibility across the organization</li>
-              <li>Easy booking requests and approvals for students and staff</li>
+            <ul>
+              <li>Real-time facility availability and booking</li>
+              <li>Automated conflict detection across schedules</li>
+              <li>Integration with athletic and maintenance systems</li>
+              <li>Organization-wide calendar visibility</li>
             </ul>
-            <p class="tech"><strong>Tech Stack:</strong> PHP, Symfony, JavaScript, MySQL</p>
+            <p class="tech">
+              <strong>Tech:</strong> PHP, Symfony, JavaScript, MySQL
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="https://fsv4.rschooltoday.com" target="_blank" class="btn btn-outline-info btn-sm mt-2">Visit Site</a>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://fsv4.rschooltoday.com"
+               target="_blank"
+               class="btn btn-outline-info btn-sm">
+              Visit Site
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2: Supply Management System -->
+      <!-- Supply Management -->
       <div class="col">
-        <div class="card h-100 border-0 shadow-sm">
+        <div class="card h-100 border-0">
           <div class="card-body">
             <h5 class="card-title">Supply Management System</h5>
-            <p class="card-text">
-              Cloud-based inventory management system for businesses, providing real-time control of stock and automated workflows.
+            <p>
+              Cloud-based inventory management platform delivering
+              real-time stock visibility, automation, and reporting
+              for enterprise clients.
             </p>
-            <ul class="mb-2">
-              <li>Seamless integration with ERP systems or standalone usage</li>
-              <li>Real-time monitoring of inventory levels to prevent stockouts</li>
-              <li>Automated alerts, procurement, and administrative tasks</li>
-              <li>Mobile-friendly interface with cloud-hosted architecture</li>
-              <li>Advanced reporting and usage tracking for better decision-making</li>
+            <ul>
+              <li>ERP integration or standalone deployment</li>
+              <li>Real-time inventory tracking & alerts</li>
+              <li>Automated procurement workflows</li>
+              <li>Cloud-hosted, mobile-friendly UI</li>
             </ul>
-            <p class="tech"><strong>Tech Stack:</strong> ASP.net, SQL Server, Azure Dev Ops Server</p>
+            <p class="tech">
+              <strong>Tech:</strong> ASP.NET, C#, SQL Server, Azure DevOps
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="https://supplypro.com" target="_blank" class="btn btn-outline-info btn-sm mt-2">Visit Site</a>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://supplypro.com"
+               target="_blank"
+               class="btn btn-outline-info btn-sm">
+              Visit Site
+            </a>
           </div>
         </div>
       </div>
@@ -191,19 +205,18 @@
     </div>
   </section>
 
-  <!-- Experience -->
-  <section>
+  <!-- EXPERIENCE -->
+  <section class="mb-5">
     <h2>Experience</h2>
 
     <div class="experience-item">
-      <h5>Full-Stack Developer | Arbiter Sports</h5>
+      <h5>Senior Full-Stack Developer | Arbiter Sports</h5>
       <small>Jan 2025 – Present | Remote</small>
       <ul>
-        <li>Developed and maintained dynamic web applications using PHP and MySQL, improving efficiency and scalability.</li>
-        <li>Implemented frameworks (Laravel, Symfony) to streamline development cycles and reduce deployment time.</li>
-        <li>Integrated user-facing elements with server-side logic, ensuring seamless functionality across platforms.</li>
-        <li>Conducted code reviews, testing, and optimizations, reducing critical bugs by 20%.</li>
-        <li>Collaborated with cross-functional teams to deliver new features that improved user experience and product adoption.</li>
+        <li>Developed and maintained large-scale PHP/MySQL applications.</li>
+        <li>Implemented Laravel and Symfony to improve development speed.</li>
+        <li>Optimized performance and reduced critical bugs by 20%.</li>
+        <li>Collaborated with cross-functional teams to deliver new features.</li>
       </ul>
     </div>
 
@@ -211,11 +224,9 @@
       <h5>.NET C# Developer | Lemontech IT Solutions</h5>
       <small>Jan 2019 – Dec 2024</small>
       <ul>
-        <li>Designed and developed applications using C#, .NET, ASP.NET, SQL Server, and WinForms.</li>
-        <li>Created and maintained SQL Server databases, ensuring data integrity and performance.</li>
-        <li>Built high-performance backend systems, reducing downtime and improving efficiency.</li>
-        <li>Delivered client-specific solutions through close collaboration with teams and stakeholders.</li>
-        <li>Conducted troubleshooting, bug fixing, and performance tuning, enhancing system stability.</li>
+        <li>Built secure and scalable systems using C# and ASP.NET.</li>
+        <li>Designed and optimized SQL Server databases.</li>
+        <li>Improved backend performance and system stability.</li>
       </ul>
     </div>
 
@@ -223,47 +234,30 @@
       <h5>Full-Stack PHP Developer | PlayOn Sports</h5>
       <small>Dec 2023 – Jan 2025</small>
       <ul>
-        <li>Built and optimized PHP/MySQL applications, improving page load speeds.</li>
-        <li>Implemented new features that boosted user engagement and enhanced mobile responsiveness.</li>
-        <li>Conducted code reviews and API integrations, streamlining workflows.</li>
-        <li>Collaborated with cross-functional teams in an agile environment, consistently delivering sprint goals on time.</li>
+        <li>Enhanced PHP/MySQL applications for performance and UX.</li>
+        <li>Implemented mobile-responsive features.</li>
+        <li>Integrated APIs and conducted code reviews.</li>
       </ul>
     </div>
 
     <div class="experience-item">
-      <h5>Full-Stack PHP Developer | Distributed Website Corporation (rSchoolToday)</h5>
+      <h5>Full-Stack PHP Developer | rSchoolToday</h5>
       <small>Mar 2017 – Dec 2023</small>
       <ul>
-        <li>Developed and maintained a large-scale school management platform used nationwide.</li>
-        <li>Optimized backend systems, reducing query response times by 40% and improving system reliability.</li>
-        <li>Delivered new features that increased customer satisfaction scores by 25%.</li>
-        <li>Led bug fixing and refactoring efforts, reducing reported issues by 30%.</li>
-        <li>Integrated APIs and third-party tools (payments, scheduling, reporting), expanding platform capabilities.</li>
-        <li>Supported long-term scalability to serve thousands of daily active users.</li>
+        <li>Maintained a nationwide school management platform.</li>
+        <li>Reduced query response times by 40%.</li>
+        <li>Integrated third-party APIs and payment systems.</li>
       </ul>
     </div>
   </section>
 
-  <!-- Technical Skills -->
-  <section>
-    <h2>Technical Skills</h2>
-    <ul class="skills-list">
-      <li><strong>Languages & Frameworks:</strong> PHP, C#, ASP.NET, Laravel, Symfony, Node.js, React.js, Angular, Visual Basic, C++</li>
-      <li><strong>Web Development:</strong> HTML, CSS, Bootstrap, JavaScript, jQuery, WordPress</li>
-      <li><strong>Databases:</strong> MySQL, SQL Server</li>
-      <li><strong>Tools & Platforms:</strong> Git, JIRA, Azure, AWS</li>
-      <li><strong>Other:</strong> API Integration, WinForms, Cross-platform Development, Agile/Scrum, Azure DevOps Server</li>
-    </ul>
-  </section>
-
 </main>
 
-<!-- Footer -->
 <footer>
   © 2026 Alcel Montecino
 </footer>
 
-<!-- Bootstrap JS Bundle -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
